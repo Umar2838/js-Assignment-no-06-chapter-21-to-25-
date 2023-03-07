@@ -53,11 +53,13 @@
 
 //Question no 09
 
-// var numstr = "12"
-// document.write("Value: " + numstr)
-// document.write("</br>Type: " + typeof(numstr))
-// document.write("Value: " + +numstr)
-// document.write("</br>Type: " + typeof(numstr))
+// var string = "372"
+// var number = Number(string)
+// document.write("Value: " + string)
+// document.write("</br>Type: " + typeof(string))
+// document.write("</br>Value: " + string)
+// document.write("</br>Type: " + typeof(number))
+
 
 //Question no 10
 
@@ -68,7 +70,58 @@
 
 //Question no 11
 
-var input = "javascript"
+// var input = "javascript"
+// var spl = input.toLowerCase().split(" ");
 
-var result = input.toUpperCase()
-alert(result)
+// for( var i=0;i<spl.length;i++){
+//   spl[i]=spl[i][0].toUpperCase() + spl[i].slice(1)
+// }
+// var join = spl.join(" ")
+// console.log(join)
+
+
+// Question no 12
+
+// var num = 36.36
+// var replace = num.toString().replace(".","")
+// console.log(replace)
+
+
+//Question no 14
+
+// var arr = ["cakes", "apple pie", "cookies", "chips", "patties"];
+
+// var userInput = prompt("Enter the name of the Item");
+
+// var match = false;
+// for (var i = 0; i < arr.length; i++) {
+//   if (arr[i].toLowerCase() === userInput.toLowerCase()) {
+//  match = true;
+//     break;
+//   }
+// }
+// if (match) {
+//   console.log(userInput + " is available in the Bakery at index " + i);
+// } else {
+//   console.log(userInput + " is not available in the Bakery at any index ");
+// }
+
+//Question no 15
+
+// var pass = prompt("Enter a valid Password")
+
+// if(pass === )
+
+
+var password = prompt("Please enter a password that contains alphabets and numbers, is at least 6 characters long, and does not start with a number:");
+
+if (password.length < 6) {
+  alert("Password should be at least 6 characters long. Please enter a valid password.");
+} else if (!isNaN(password.charAt(0))) {
+  alert("Password should not start with a number. Please enter a valid password.");
+} else if () {
+  alert("Password should contain both alphabets and numbers. Please enter a valid password.");
+} else {
+  alert("Password is valid.");
+}
+
